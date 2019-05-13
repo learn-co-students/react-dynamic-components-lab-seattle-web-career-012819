@@ -63,6 +63,7 @@ describe('ColorBox', () => {
   })
   
   it('correctly reduces the opacity by 0.1 after first recursive call', () => {
+    console.log("Inside Test: ", box.childAt(0).prop('opacity'))
     expect(box.childAt(0).prop('opacity')).to.equal(0.9) 
   })
   
